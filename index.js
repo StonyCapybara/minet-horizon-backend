@@ -42,5 +42,9 @@ app.post("/chat", async (req, res) => {
   res.json({ reply: data.choices[0].message.content });
 });
 
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log("Server started on", PORT));
