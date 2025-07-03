@@ -24,7 +24,7 @@ app.post("/chat", async (req, res) => {
     headers: {
       "Authorization": `Bearer ${API_KEY}`,
       "Content-Type": "application/json",
-      "HTTP-Referer": "http://localhost:3000", // Replace with your Railway URL if deployed
+      "HTTP-Referer": "https://minet-horizon-backend.onrender.com",
       "X-Title": "Zonbot"
     },
     body: JSON.stringify({
